@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Yeseva+One&display=swap');
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	color: #fff;
+}
+col-1{flex: 1;}
+col-2{flex: 2;}
+col-3{flex: 3;}
+col-4{flex: 4;}
+col-5{flex: 5;}
+col-6{flex: 6;}
+h1 {
+	font-family: 'Yeseva One', serif;
+	font-size: 52px;
+	line-height: 52px;
+}
+h2 {
+	font-family: 'Yeseva One', serif;
+	font-size: 36px;
+	line-height: 36px;
+}
+header {
+	background-color: #120E10;
+}
+.header__logo {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	padding-top: 30px;
+	padding-bottom: 15px;
+}
+.header__content {
+	display: flex;
+}
+.header__title {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	padding: 110px 65px 65px 200px;
+}
+.header__cat {
+	display: flex;
+	flex: 1;
+}
+.header__cat img {
+	object-fit: cover;
+	width: 100%;
+}
+.lead {
+	color: #a07b50;
+	padding-top: 34px;
+	padding-bottom: 12px;
+}
+.btn {
+	position: relative;
+	display: block;
+	padding: 18px;
+	margin-top: 65px;
+	margin-bottom: 65px;
+	width: 200px;
+	text-decoration: none;
+	text-align: center;
+	font-size: 14px;
+}
+.btn-dark{
+	background-color: #120E10;
+	border: 1px solid #a07b50;
+	color: #fff;
+}
+.btn-dark:hover {
+	background-color: #a07b50;
+	color: #120E10;
+	transition: background-color 0.3s ease-out;
+}
+
+.pets{
+	background-color: #191517;
+	padding: 200px 110px 50px 110px;
+}
+.pets__header {
+	text-align: center;
+}
+.slider__tabs {
+	font-size: 18px;
+	padding: 35px 0;
+}
+.slider__tabs ul {
+	display: flex;
+	justify-content: center;
+}
+.slider__tabs li {
+	padding: 10px;
+}
+.slider__tabs a {
+	text-decoration: none;
+	color: #4a4749;
+}
+.slider__tabs .active a {
+	color: #fff;
+
+}
+.slider {
+	display: flex;
+}
+.slider__col-left,
+.slider__col-right {
+	display: flex;
+	flex: 1;
+	gap: 35px;
+	flex-direction: column;
+}
+.slider__col-left {
+	margin-right: 35px;
+}
+.slider img {
+	object-fit: cover;
+	width: 100%;
+}
+.pets__footer {
+	display: flex;
+	justify-content: center;
+}
+.breed-features {
+	background-color: #191517;
+}
+.breed__header {
+	text-align: #191517;
+	padding-bottom: 30px;
+	text-align: center;
+}
+.lead {
+	color: #AD7B4A;
+}
+.breed__content {
+
+}
+.breed__image {
+	text-align: center;
+	position: relative;
+	z-index: 1;
+}
+.breed__image:before {
+	content: '';
+	position: absolute;
+	left: calc((100% / 2) - (520px / 2));
+	top: calc((100% / 2) - (520px / 2));;
+	background-color: rgba(0,0,0,0.35);
+	border-radius: 50%;
+	z-index: -1;
+	width: 520px;
+	height: 520px;
+}
+.breed__image:after {
+	content: '';
+	position: absolute;
+	left: calc((100% / 2) - (630px / 2));
+	top: calc((100% / 2) - (630px / 2));;
+	border: 1px solid #a07b50;
+	border-radius: 50%;
+	z-index: -1;
+	width: 630px;
+	height: 630px;
+}
+.breed__list {
+	z-index: 2;
+
+}
+.breed__itame {
+	position: relative;
+	font-size: 14px;
+	line-height: 21px;
+	max-width: 260px;
+}
+.breed__itame:before {
+	content: '';
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background-color: #a07b50;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.breed__itame--1 {
+	text-align: right;
+	top: -490px;
+	left: 235px;
+	z-index: 3;
+}
+.breed__itame--1:before {
+	top: 25px;
+	left: 262px;
+}
+.breed__itame--2 {
+	text-align: left;
+	top: -190px;
+	left: 1054px;
+}
+.breed__itame--2:before {
+	top: 3px;
+	left: -20px;
+}
+.breed__itame--3 {
+	text-align: left;
+	top: -415px;
+	left: 1118px;
+}
+.breed__itame--3:before {
+	top: 4px;
+	left: -20px;
+}
+.breed__itame--4 {
+	text-align: right;
+	top: -290px;
+	left: 252px;
+}
+.breed__itame--4:before {
+	top: 12px;
+	left: 266px;
+}
+.advantages {
+	background-color: #120E10;
+	padding: 100px 50px;
+}
+.advantages__lead {
+	color: #a07b50;
+}
+.advantages__header {
+	text-align: center;
+}
+.advantages__content {
+	display: flex;
+	gap:40px;
+	flex: 1;
+	justify-content: space-between;
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+.advantages__item {
+	padding: 80px 40px;
+	width: calc(100%/3);
+	border: 20px solid #191517;
+	background-color: #191517;
+}
+.advantages__item:hover {
+	background-color: #a07b50;
+	color: #fff;
+	transition: background-color 0.7s ease-out;
+}
+.advantages p {
+	padding-top: 40px;
+}
+.pets-tab-2,
+.pets-tab-3 {
+	display: none;
+}
+
